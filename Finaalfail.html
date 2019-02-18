@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Akadeemiliste mõistete sõnastik</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Otsi mõistet.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%;">Mõiste</th>
+    <th style="width:60%;">Selgitus</th>
+  </tr>
+  <tr>
+    <td>aasimine </td>
+    <td>(ld asinus - eesel) - eriline sissevedamine, narritamine, nöökamine, peen tögamine. </td>
+  </tr>
+  <tr>
+    <td>abiesimees</td>
+    <td>(ka subsenior) Esimehe parem käsi ja asendaja. Juhatuse liige.</td>
+  </tr>
+  <tr>
+    <td>abikirjatoimetaja</td>
+    <td>ka subscriba. Kirjatoimetaja abiline ja asendaja. Korporatsioonides L!E! liige</td>
+  </tr>
+  <tr>
+    <td>Åbo Nation</td>
+    <td>rootsi tudengiorganisatsioon Helsingis. Värvid: kuld (kitsas)-sinine (keskmine)-hõbe(lai)-sinine (keskmine)-kuld (kitsas).</td>
+  </tr>
+  <tr>
+    <td>A!D!</td>
+    <td>korp! Arminia Dorpatensis</td>
+  </tr>
+  <tr>
+    <td>Ad exercitium Salamandris!</td>
+    <td>(lad.) Valmis olla Salamandri joomiseks! </td>
+  </tr>
+  <tr>
+    <td>ad libitum</td>
+    <td>(ld) soovi kohaselt.</td>
+  </tr>
+  <tr>
+    <td>ad locam</td>
+    <td>(ld) kohale.</td>
+  </tr>
+   <tr>
+    <td>ad locas</td>
+    <td>(ld) kohtadele.</td>
+  </tr>
+   <tr>
+    <td>ad pedes</td>
+    <td>(ld) püsti.</td>
+  </tr>
+   <tr>
+    <td>Aestia</td>
+    <td>nimi, mille all üritas EÜS-ist lahku löönud hilisem korp! Fraternitas Estica end 1904 korporatsiooniks registreerida. Toona valitud värvikombinatsioon oli roheline-valge-must. Korp!-i registreerimine takerdus 1905. aasta revolutsiooni sündmustesse ja hiljem otsustati ümber nii nimi kui värvid. </td>
+  </tr>
+   <tr>
+    <td>Age quod agis</td>
+    <td>(lad.) "Tee mis teed", Korp! Leola vapikiri. </td>
+  </tr>
+  <tr>
+    <td>A/K</td>
+    <td>aukohus.</td>
+  </tr>
+   <tr>
+    <td>akadeemia</td>
+    <td>kõrgkool. Sõna on tulnud kreeka keelest “Akademeia” – atika muinaskangelasele, Akademosele pühendatud hiis Ateena lähedal, kus Platon õpetas ja oma kooli pidas. </td>
+  </tr>
+   <tr>
+    <td>akadeemiline ema</td>
+    <td>mater (ld);Põhjalas: naissoost akadeemiline vanem; meesorganisatsioonides: eestseisuse või akadeemilise isa poolt valitud isik, kes jälgib salajase ja kriitilise kõrvaltvaatajana tulevast tegevliiget;
+    naisorganisatsioonides:lihtliikme/rebase/noorliikme poolt enesele tegevliikmete või vilistaste seast valitud parim sõber ja õpetaja, kes teda siis ka igati kaitsma ja toetama peab; </td>
+  </tr>
+   <tr>
+    <td>akadeemiline isa</td>
+    <td>pater (ld);Põhjalas: meessoost akadeemiline vanem; meesorganisatsioonides: lihtliikme/rebase/noorliikme poolt enesele tegevliikmete või vilistaste seast valitud parim sõber ja õpetaja, kes teda siis ka igati kaitsma ja toetama peab; naisorganisatsioonides: eestseisuse või akadeemilise ema poolt valitud isik, kes jälgib salajase ja kriitilise kõrvaltvaatajana tulevast tegevliiget; </td>
+  </tr>
+  <tr>
+    <td>akadeemiline perekond</td>
+    <td>akadeemiline isa/ema oma akadeemiliste lastega </td>
+  </tr>
+   <tr>
+    <td>akadeemiline poeg</td>
+    <td>filius (ld) Põhjalas: meessoost akadeemiline laps; meesorganisatsioonides: akadeemilise isa poolt kureeritav liige; </td>
+  </tr>
+   <tr>
+    <td>akadeemiline suguvõsa</td>
+    <td>ühise akadeemilise esivanema kõik akadeemilised järglased läbi kõikide põlvkondade.</td>
+  </tr>
+   <tr>
+    <td>akadeemiline tütar</td>
+    <td>Põhjalas: naissoost akadeemiline laps; naisorganisatsioonides: akadeemilise ema poolt kureeritav liige; </td>
+  </tr>
+   <tr>
+    <td>akadeemiline vanus</td>
+    <td>organisatsiooni astumisest alates arvestatav vanus. </td>
+  </tr>
+   <tr>
+    <td>akadeemiline veerand</td>
+    <td>ülikooli traditsioon alustada loenguid 15 minutit peale täistundi. Hilinejate ettekääne igale poole veerand tundi hiljem jõuda. </td>
+  </tr>
+   <tr>
+    <td>akadeemiline vend</td>
+    <td>oma akadeemilise vanema teine akadeemiline poeg. </td>
+  </tr>
+   <tr>
+    <td>akadeemiline õde</td>
+    <td>oma akadeemilise vanema teine akadeemiline tütar. </td>
+  </tr>
+   <tr>
+    <td>Alma Mater</td>
+    <td>ülikool, (ld) toitev ema (alere - imetama, toitma). Roomlased andsid selle tiitli jumalannadele (nt põllunduse jumalanna Ceres ja maajumalanna Kybele). Ülikooli kohta võeti termin kasutusele kirjalike allikate järgi 1710 Inglismaal.
+</td>
+  </tr>
+   <tr>
+    <td>altes Haus</td>
+    <td>(sks.) vanamaja</td>
+  </tr>
+   <tr>
+    <td>ametlik õllelaud</td>
+    <td>traditsiooniline pidulik, keerukas ja suurte piirangutega õllelaua kord. </td>
+  </tr>
+   <tr>
+    <td>ametlikud laulud</td>
+    <td>laulud, mida lauldakse määratud üritustel määratud korras ja ilma lauludele tavaliselt järgnevate hüüdudeta. </td>
+  </tr>
+   <tr>
+    <td>ametnik</td>
+    <td>organisatsiooni liige, kes on valitud kindlate ülesannete täitmiseks (näiteks esimees, vanamees, raamatukoguhodja jne.). </td>
+  </tr>
+   <tr>
+    <td>amica</td>
+    <td>(ld) sõber, sõbranna; Korp! Amicitia liige. </td>
+  </tr>
+   <tr>
+    <td>Amicitia</td>
+    <td> (ld) sõprus. Naiskorporatsioon Tartus. Asutatud 21.11.1924. Värvid: sirelililla-tumeroheline-kuldne (julgus, lootus, ausus). Legendi järgi tekkis idee sirelioksast kuldses vaasis. Lipukiri: “Per aspera ad astra!”. Tegevus taastati ametlikult Tartu Ülikooli nõukogus registreerimisega 28.04.1989. Sõpruslepingud Läti korp! Imeriaga (1939) ja Wiipurilainen Osakuntaga (1991). Korter Kastani 65-2. </td>
+  </tr>
+   <tr>
+    <td>antimensrant</td>
+    <td> korporatsiooni liige, kes põhimõtteliselt ei lahenda auasju mensuuri teel. </td>
+  </tr>
+   <tr>
+    <td>apollo</td>
+    <td>üldine mustvalge Soome üliõpilasmüts või seda kandev tudeng (nimi tuleneb Apollo templi märgist mütsil), mainitud sõna kasutati ennekõike enne 1940. aastat. </td>
+  </tr>
+   <tr>
+    <td>arbiter bibendi</td>
+    <td>(lad.) peokorraldaja, peoperemees, magister bibendi. </td>
+  </tr>
+   <tr>
+    <td>Arminia Dorpatensis</td>
+    <td>kristlik meeskorporatsioon Tartus. Värvid: must-valge-vanakuldne (tõsidus, sihikindlus, mõõdukus; puhtus, ustavus, vabadus; rõõm, noorus). Ka rebased kannavad linte, mis on must-kuldsed hõbedase ääristusega. Pidulikel puhkudel on rebasvanema, seeniori ja peomeistri peakatteks tekli asemel cervis (ilma nokata tikitud peakate, rebasvanemal koos rebase sabaga) ja nad kannavad musti, nööridega ilustatud pikki kuubi. Lipukiri: Deus-Libertas-Patria (Jumal-Vabadus-Isamaa). Registreeriti Tartu Ülikooli juures 24.10.1860. Alguse sai organisatsioon Theologischer Abendi nime all 24.10.1850. aastal, mida organisatsioon tähistab sünnipäevana. Arminia Dorpatensise nimi võeti 27.11.1859. Aastal 1862 sai A!D! Wingolfi liidu liikmeks. 1865. aastal võeti Tartu Chargierten Conventi. Aasta hiljem astus A!D! osaks saadud solvangute pärast Chargierten Convendist välja ja teatas enda laialiminekust. Vilistlaskogu jätkas siiski tegevust ja 1870ndatel üritati tulutult end taas registreerida. 1900 tähistati suurejooneliselt Arminia 50. aastapäeva Riias, Peterburis ja Tartus. Kuni 1934. aastani hoidis Arminia traditsioone elus 1923. aastal asutatud Danzigi Wingolf. 1970. aastal läks Arminia vilistlaskogu ametlikult laiali. Organisatsioon taasasutati 02.05.1994 Tartus. 1997. võeti Arminia taas vastu Wingolfi liidu liikmeks. Aadress: Tartu, Õpetaja 11. </td>
+  </tr>
+   <tr>
+    <td>asjaajamiskoosolek</td>
+    <td>reeglina õppetöö ajal iganädalane koosolek jooksvate küsimuste arutamiseks. </td>
+  </tr>
+  <tr>
+    <td>aukohus</td>
+    <td> institutsioon, mis on ette nähtud aukonfliktide lahendamiseks. Koosneb mõlema parte kuramaatoritest ja ende poolt valitud erapooletust. </td>
+  </tr>
+   <tr>
+    <td>Ausus, kindlus, iseteadvus, ühistumine</td>
+    <td>Korp! Rotalia lipukiri. </td>
+  </tr>
+   <tr>
+    <td>autasu</td>
+    <td>satisfikatsioon, auasja lahendus.</td>
+  </tr>
+   <tr>
+    <td>auvilistalne</td>
+    <td>Auvilistlaseks võib erilise austusavaldusena valida oma liiget vilistlaskogu. Auvil! ei tasu üldkoosoleku poolt määratud korralisi osamakse. Muidu võrduvad tema kohustused ja õigused vilistlase omadega.(Korporatsioonides on nii, kuidas meil on???)</td>
+  </tr>
+   <tr>
+    <td>avalik väljakutse</td>
+    <td>"Oled (olete) välja kutsutud!", "Mu härra, Te olete rumal poisike!" (sks Mein Herr, Du bist (Sie sind) eine (kleine) dummel Junge!") või "Palun Sind (Teid) tõsiselt vaikida!" Viimast väljendit kasutatakse seltskonnas, et olukorda maskeerida. </td>
+  </tr>
+   <tr>
+    <td>Ave</td>
+    <td>meeskorporatsioon Tallinnas. Värvid: kollane-must-valge. Liige: avensis. Asutatud 29.10.1987. Tegutseb vilistlaskogu tasandil. </td>
+  </tr>
+   <tr>
+    <td>b!</td>
+    <td>bursch, üliõpilane.</td>
+  </tr>
+   <tr>
+    <td>B.A.</td>
+    <td>baccalaureus artium, Bachelor of Arts.</td>
+  </tr>
+   <tr>
+    <td>bakhanaal</td>
+    <td>pidu Baccuse auks, joomapidu. </td>
+  </tr>
+   <tr>
+    <td>bakhant</td>
+    <td>bakanaalist osavõtja, joomavend. </td>
+  </tr>
+   <tr>
+    <td>beež-roheline violett</td>
+    <td>Korp! Lembela värvid. </td>
+  </tr>
+   <tr>
+    <td>B!G!</td>
+    <td>Burschengericht, üliõpilaskohus, aukohus. </td>
+  </tr>
+   <tr>
+    <td>bibamus!</td>
+    <td>(lad.) joome! </td>
+  </tr>
+   <tr>
+    <td>Bierzipfel</td>
+    <td>õlleripats</td>
+  </tr>
+   <tr>
+    <td>blamaazh</td>
+    <td>vestluses partneri poolt provotseeritud "sisserääkimine"; vt. ka renomeerimine. </td>
+  </tr>
+   <tr>
+    <td>burg</td>
+    <td>(sks.) mägi, ka linn; üliõpilase üürikorter; "erakas". </td>
+  </tr>
+   <tr>
+    <td>Burschengericht</td>
+    <td>Riia korporatsioonide vaheline korrakohus, ka Tartus saksa korporatsioonide vahel, võrreldav EKL!-i liidukohtuga. </td>
+  </tr>
+   <tr>
+    <td>Burschenschaft</td>
+    <td>maakondlikul ning aatelisel alusel loodud saksa üliõpilasorganisatsioon. </td>
+  </tr>
+   <tr>
+    <td>Bursch, Burche </td>
+    <td>(sks.) üliõpilane; kr. ja kesklad. algvorm bursa (rahakott) viitab palgale e. stipendiumile, mille saajaid nimetati bursarii või bursici. </td>
+  </tr>
+   <tr>
+    <td>Burschen heraus!</td>
+    <td>(sks.) Üliõpilased siia!; hüüdlause, mille peale kõik vähegi enesest ja teistest lugupidavatest ausatest burschidest ruttavad hüüdjale appi - olgu see siis tänaval või spelungis. </td>
+  </tr>
+  <tr>
+    <td>burschvilistlane</td>
+    <td>üliõpilasvilistlane, s.o. tegevkonvendi liige, kes on ajutiselt õppimise lõpetanud või siirdunud ajutiselt õppima teise linna. </td>
+  </tr>
+   <tr>
+    <td>burssvilistlane</td>
+    <td>burschvilistlane.Lühend: b!vil!; Mitmus: b!vil!! või b!vil!b!vil!</td>
+  </tr>
+   <tr>
+    <td>buršikoosne</td>
+    <td>üliõpilaslik, korporantlik. </td>
+  </tr>
+   <tr>
+    <td>burššvilistalne </td>
+    <td>burschvilistlane. </td>
+  </tr>
+   <tr>
+    <td>bürger</td>
+    <td>(sks.) linnlane, linnakodanik; (halvustavalt) mitteüliõpilane. </td>
+  </tr>
+   <tr>
+    <td>c.</td>
+    <td>coetus. </td>
+  </tr>
+   <tr>
+    <td>C!A!</td>
+    <td>Korp! Amicitia. </td>
+  </tr>
+   <tr>
+    <td>cantharius</td>
+    <td>(lad.) sangaga peeker. </td>
+  </tr>
+   <tr>
+    <td>cantores amant humores</td>
+    <td>(lad.) laulikud armastavad märjukest. </td>
+  </tr>
+   <tr>
+    <td>cantus ex (est)! </td>
+    <td>(lad.) laul (on) lõppenud!; fraas, mida ütleb laulu ettekandja peale laulu lõppu. </td>
+  </tr>
+   <tr>
+    <td>Cantus peto! </td>
+    <td>(lad.) Palun lauluks luba! </td>
+  </tr>
+   <tr>
+    <td>cantustund</td>
+    <td>lihtliikmetele ja noormajadele kohustuslik iganädalane laulutund. </td>
+  </tr>
+   <tr>
+    <td>Carpe diem!</td>
+    <td>(lad.) Hoia päeva!; EÜS-i vapikiri. </td>
+  </tr>
+   <tr>
+    <td>caupona</td>
+    <td>(lad.) kõrts. </td>
+  </tr>
+   <tr>
+    <td>caupona amoris </td>
+    <td>(lad.) seoses armuasjadega. </td>
+  </tr>
+   <tr>
+    <td>Cereviser</td>
+    <td>spetsiaalne väike ilma nokata kneipimismüts mõnedes Saksa korporatsioonides. </td>
+  </tr>
+   <tr>
+    <td>cerevis </td>
+    <td>müts - cereviser. </td>
+  </tr>
+   <tr>
+    <td>C!FP </td>
+    <td>Korp! Filiae Patriae. </td>
+  </tr>
+   <tr>
+    <td>C!Fr!E!</td>
+    <td>Korp! Fraternitas Estica. </td>
+  </tr>
+   <tr>
+    <td>C!Fr!L!</td>
+    <td>Korp! Fraternitas Liviensis. </td>
+  </tr>
+   <tr>
+    <td>C!Fr!T! </td>
+    <td>Korp! Fraternitas Tartuensis. </td>
+  </tr>
+  <tr>
+    <td>C!C!</td>
+    <td>Chargierten Convent. </td>
+  </tr>
+   <tr>
+    <td>Chargierter</td>
+    <td> eestseisuse liige saksa korporatsioonides; lad. charge - amet. </td>
+  </tr>
+   <tr>
+    <td>Chargierten Convent </td>
+    <td>saksa korporatsioonide liit ja tema juhtorgan. </td>
+  </tr>
+   <tr>
+    <td>Ch!C! </td>
+    <td>Chargierten Convent. </td>
+  </tr>
+   <tr>
+    <td>C!I!</td>
+    <td>Korp! Indla. </td>
+  </tr>
+   <tr>
+    <td>civis</td>
+    <td>(lad.) akadeemiline kodanik; kaasvõitleja Skandinaavias ja Soomes. </td>
+  </tr>
+   <tr>
+    <td>C!K!</td>
+    <td>konvendikohus, korporatsioonikohus. </td>
+  </tr>
+   <tr>
+    <td>C!L!</td>
+    <td>Korp! Leola. </td>
+  </tr>
+   <tr>
+    <td>C!Lem!</td>
+    <td>Korp! Lembela. </td>
+  </tr>
+   <tr>
+    <td>coetus</td>
+    <td>(lad.) kogumus; ühel semestril organisatsiooni astunute kogu ja nende üldnimetus. </td>
+  </tr>
+   <tr>
+    <td>colorium</td>
+    <td>(lad.) kõik värviregaalid kokku. </td>
+  </tr>
+   <tr>
+    <td>comment </td>
+    <td>(pr.) lisaks kodukorrale üliõpilasorganisatsioonides valitsev traditsioonidel ja uusustel põhinev kindel kord. </td>
+  </tr>
+   <tr>
+    <td>comment'i garanteerija </td>
+    <td>kaaskneipija. </td>
+  </tr>
+   <tr>
+    <td>comment suspendu</td>
+    <td>(pr.) edasilükatud auvahekord; selle katkestamine tõsistel põhjustel. </td>
+  </tr>
+   <tr>
+    <td>commercium</td>
+    <td>(lad.) kommerss. </td>
+  </tr>
+   <tr>
+    <td>commercium ex (est)!</td>
+    <td>(lad.) kommerss on lõppenud! </td>
+  </tr>
+   <tr>
+    <td>commercium incipit!</td>
+    <td>(lad.) kommerss on alanud! </td>
+  </tr>
+   <tr>
+    <td>commilito, commilitonis </td>
+    <td>(lad.) kaasvõitleja. </td>
+  </tr>
+   <tr>
+    <td>concoetur</td>
+    <td>(lad.) samasse coetus'se kuuluv isik. </td>
+  </tr>
+   <tr>
+    <td>confrater</td>
+    <td>(lad.) kaasvõitleja. </td>
+  </tr>
+  <tr>
+    <td>Constantia ad finem ducit </td>
+    <td>(lad.) Püsivus viib sihile; Korp! Lembela lipukiri </td>
+  </tr>
+   <tr>
+    <td>contra</td>
+    <td>(lad.) vastu. </td>
+  </tr>
+   <tr>
+    <td>convent</td>
+    <td>lad. conventus - kogumus; tegevliikmete kogu või selle koosolek; korporatsioonile kuuluv ning tema tegevuseks vajalik hoone või korter. </td>
+  </tr>
+   <tr>
+    <td>corps!</td>
+    <td>(pr.) Saksa korporatsiooni lühend. </td>
+  </tr>
+   <tr>
+    <td>C!R!</td>
+    <td>Korp! Rotalia. </td>
+  </tr>
+   <tr>
+    <td>C!Rev! </td>
+    <td>Korp! Revelia. </td>
+  </tr>
+   <tr>
+    <td>crambambuli</td>
+    <td>ajalooliselt Danzigis põletatud viin; laiemas mõistes üldse vein ja viin ning kitsamas mõistes väga kindla retseptiga veinist, viinast, maitseainetest, suhkrust ja muudest lisanditest segatud alkohoolne jook. </td>
+  </tr>
+   <tr>
+    <td>C!S! </td>
+    <td>Korp! Sakala. </td>
+  </tr>
+   <tr>
+    <td>C!Q!</td>
+    <td>sks. Conventsquarter; konvendikorter. </td>
+  </tr>
+   <tr>
+    <td>C!T! </td>
+    <td>Korp! Tehnola. </td>
+  </tr>
+   <tr>
+    <td>C!U!</td>
+    <td>Korp! Ugala. </td>
+  </tr>
+   <tr>
+    <td>curriculum vitae</td>
+    <td>(lad.) elulookirjeldus, elulugu; osades organisatsioonides, näit. Korp! Ugalas peab kõigil liikmetel olema eestseisusele esitatud. </td>
+  </tr>
+   <tr>
+    <td>currisch</td>
+    <td> vt. kuurish. </td>
+  </tr>
+   <tr>
+    <td>C!V!</td>
+    <td>Korp! Vironia. </td>
+  </tr>
+   <tr>
+    <td>C.V. </td>
+    <td>curriculum vitae. </td>
+  </tr>
+   <tr>
+    <td>delirium tremens</td>
+    <td>(lad.) joomahullus, deliirium. </td>
+  </tr>
+   <tr>
+    <td>der Fuchs hat keine Meinung</td>
+    <td>(sks.) rebasel pole arvamust. </td>
+  </tr>
+   <tr>
+    <td>doctor cerevisiae</td>
+    <td>(lad.) õllejoomise doktor, doktor õllejoomise alal. </td>
+  </tr>
+   <tr>
+    <td>dr. cer.</td>
+    <td>doctor cerevisiae. </td>
+  </tr>
+   <tr>
+    <td>Edite, bibite, collegiales, post multa saecula, pocula nulla</td>
+    <td>(lad.) Sööge, jooge, kaasvõitlejad, pärast meid tuleb palju sajandeid, kus meile ei pakuta ühtki karikat! </td>
+  </tr>
+  <tr>
+    <td>Eesti Korporatsioonide Liit </td>
+    <td>asut. 28. märtsil 1915.a.; siia kuuluvad Vironia, Fr. Estica, Sakala, Ugala, Rotalia, Fr. Liviensis, Revelia, Fr. Tartuensis, Tehnola, Leola (ja eksiilis vastu võetud Fr. Ucuensis); presideerivad ühe semestri kaupa vanuse järjekorras. Presideeriva organisatsiooni eestseisus moodustab automaatselt ka E.K.L.-i eestseisuse; kitsamas mõttes kõikide liikmesorganisatsioonide eestseisuste kogu, so. seenioride konvent (S!C!); ta ühendab ka vastavate korp!!-de vilistlaskondi - Eest Korporatsioonide Vilistlaskogude Liit (E.K.V.L.). </td>
+  </tr>
+   <tr>
+    <td>Eesti tütar, Eesti kodu, tugevasti seotud olgu </td>
+    <td>Korp! Filiae Patriae lipukiri. </td>
+  </tr>
+   <tr>
+    <td>eestseisus</td>
+    <td>kolmeliikmeline korp!-i juhtkond: esimees e. senior, abiesimees e. subsenior ja kirjatoimetaja e. scriba. </td>
+  </tr>
+   <tr>
+    <td>E!G!</td>
+    <td>Ehrengericht. </td>
+  </tr>
+   <tr>
+    <td>Ehrengericht </td>
+    <td>sks. korp!!-de vaheline aukohus. </td>
+  </tr>
+   <tr>
+    <td>EKL </td>
+    <td>E.K.L. </td>
+  </tr>
+   <tr>
+    <td>E.K.L.</td>
+    <td>Eesti Korporatsioonide Liit. </td>
+  </tr>
+   <tr>
+    <td>EKVL </td>
+    <td>E.K.V.L. </td>
+  </tr>
+   <tr>
+    <td>E.K.V.L.</td>
+    <td>Eesti Korporatsioonide Vilistlaskogude Liit. </td>
+  </tr>
+   <tr>
+    <td>eluaegsuse printsiip</td>
+    <td>printsiip, mille järgi kuulutakse organisatsiooni kogu oma elu. </td>
+  </tr>
+   <tr>
+    <td>ENÜS</td>
+    <td>Eesti Naisüliõpilaste Selts. </td>
+  </tr>
+   <tr>
+    <td>erakoosolek</td>
+    <td>värvikandjate koosolek. </td>
+  </tr>
+   <tr>
+    <td>erapooletu</td>
+    <td>kuramaatorite poolt valitud erapooletu aukohtu liige. </td>
+  </tr>
+   <tr>
+    <td>ergo bibamus!</td>
+    <td>(lad.) niisiis, joome!; järelikult, joome! </td>
+  </tr>
+   <tr>
+    <td>eriarvamus </td>
+    <td>märkus koosoleku protokollis, mille järgi keegi liige on häälteenamusega läbi läinud otsusesele vastu hääletanud. Tuleb soovi korral esitada selle liikme poolt kirjalikult eestseisusele. </td>
+  </tr>
+   <tr>
+    <td>erijutt </td>
+    <td>vt. spetsielles. </td>
+  </tr>
+   <tr>
+    <td>esindusvorm </td>
+    <td>"vorm number üks", s.t. mees frakis ja naine pikas õhtutualetis.</td>
+  </tr>
+   <tr>
+    <td>ettejooja </td>
+    <td> vt. ettejoomine. </td>
+  </tr>
+   <tr>
+    <td>ettejoomine </td>
+    <td>klaaside kokkulöömine eesmärgil, et üks osapooltest, s.o. ettejooja joob ära kindlaksmääratud koguse, millele siis teine osapooltest, s.o. järele- e. järgijooja peab samaväärsega vastama.
+</td>
+  </tr>
+   <tr>
+    <td>EÜS </td>
+    <td>Eesti Üliõplilaste Selts.</td>
+  </tr>
+  <tr>
+    <td>Ex solo ad solem soli patria! </td>
+    <td>(lad.) ; ÜS Liivika lipukiri. </td>
+  </tr>
+   <tr>
+    <td>faex </td>
+    <td>vt. rebane. </td>
+  </tr>
+   <tr>
+    <td>Fechtboden </td>
+    <td>lihtliige. </td>
+  </tr>
+   <tr>
+    <td>Fechtbodist </td>
+    <td>lihtliige. </td>
+  </tr>
+   <tr>
+    <td>fiducit </td>
+    <td>(lad.) fifus sit või fiducia - kindlasti loodame; seda hüüavad peale cantust l!l!! kõrge falsetiga enne ning kuld- rebased madala bassiga peale värvikandjate mollist. </td>
+  </tr>
+   <tr>
+    <td>filia patriae</td>
+    <td>(lad:) isamaa tütar; Korp! Filiae Patriae värvikandja. </td>
+  </tr>
+   <tr>
+    <td>filiae patriae </td>
+    <td>(lad.) isamaa tütred; Korp! Filiae Patriae värvikandjad. </td>
+  </tr>
+   <tr>
+    <td>filister </td>
+    <td>vilistlane. </td>
+  </tr>
+   <tr>
+    <td>filius </td>
+    <td>(lad.) poeg. </td>
+  </tr>
+   <tr>
+    <td>Fortiter in re, suaviter in modo! </td>
+    <td>(lad.) Kindel põhimõtetes, järeleandlik moodustes; EÜS-i lipukiri. </td>
+  </tr>
+   <tr>
+    <td>Fr!</td>
+    <td>Fraternitas (lühend organisatsiooni nimetuses). </td>
+  </tr>
+   <tr>
+    <td>Frat! </td>
+    <td>Fr! </td>
+  </tr>
+   <tr>
+    <td>frater </td>
+    <td>(lad.) vend. </td>
+  </tr>
+   <tr>
+    <td>frater esticus</td>
+    <td>Korp! Fraternitas Estica värvikandja. </td>
+  </tr>
+   <tr>
+    <td>frater liviensis </td>
+    <td>Korp! Fraternitas Liviensise värvikandja. </td>
+  </tr>
+   <tr>
+    <td>fraternitas </td>
+    <td>(lad.) vennastus; vennaskond. </td>
+  </tr>
+   <tr>
+    <td>frater tartuensis </td>
+    <td>Korp! Fraternitas Tartuensise värvikandja. </td>
+  </tr>
+   <tr>
+    <td>Fr!E!</td>
+    <td>Korp! Fraternitas Estica. </td>
+  </tr>
+   <tr>
+    <td>Friedrich, heraus!</td>
+    <td>Laps, tule siia!; rebane! </td>
+  </tr>
+   <tr>
+    <td>Fr!L! </td>
+    <td>Korp! Fraternitas Liviensis. </td>
+  </tr>
+  <tr>
+    <td>Fr!T!</td>
+    <td>Korp! Fraternitas Tartuensis. </td>
+  </tr>
+   <tr>
+    <td>Frühlingskur</td>
+    <td>(sks.) hommikukäik. </td>
+  </tr>
+   <tr>
+    <td>Fuchs </td>
+    <td>(sks.) rebane. </td>
+  </tr>
+   <tr>
+    <td>Fuchsenstall </td>
+    <td>rebaste loopimine; saksa korporantide komme, mille käigus loobiti rebast teki peal võimalikult kõrgele õhku. </td>
+  </tr>
+   <tr>
+    <td>Fuchsmajor </td>
+    <td>vanamees, olderman. </td>
+  </tr>
+   <tr>
+    <td>Fuchsdrill </td>
+    <td>rebasedrill; uute liikmete tutvustamine organisatsiooni sisekorraga ja nende arendamine kõikide elusituatsioonide jaoks. </td>
+  </tr>
+   <tr>
+    <td>Fürst von Thoren </td>
+    <td>Saksa üliõpilaste õlleriikliku põhiseaduse poolt loodud institutsioon, mis polnud päritav, vaid tuli võita ränga tööga õllelaudades; ta oli üleüldise õlleriigi piiramatu ja kõikehõlmav kuningas. </td>
+  </tr>
+   <tr>
+    <td>Gambrinus, püha </td>
+    <td>õllepühak ja väidetav õlle leiutaja; Jan primus (1251-1294), Brabandi hertsog ja Brüsseli õllepruulijate tsunfti auesimees. </td>
+  </tr>
+   <tr>
+    <td>gaudeamus! </td>
+    <td>(lad.) olgem rõõmsad! </td>
+  </tr>
+   <tr>
+    <td>Gaudeamus igitur</td>
+    <td>üliõpilashümn; algselt tavaline joomalaul. </td>
+  </tr>
+   <tr>
+    <td>Goldfuchs</td>
+    <td>(sks.) kuldrebane. </td>
+  </tr>
+   <tr>
+    <td>Habeas! </td>
+    <td>(lad.) Luban! </td>
+  </tr>
+   <tr>
+    <td>helebeez-roheline-violett </td>
+    <td>Korp! Lembela värvid </td>
+  </tr>
+   <tr>
+    <td>helelilla-tumeroheline-kuldne</td>
+    <td>Korp! Amicitia värvid. </td>
+  </tr>
+   <tr>
+    <td>helesinine-violett-valge </td>
+    <td>Korp! Sakala värvid.</td>
+  </tr>
+   <tr>
+    <td>Herr Bruder</td>
+    <td>(sks.) kaasvõitleja osades Saksa korp!!-des. </td>
+  </tr>
+   <tr>
+    <td>hommikukäik </td>
+    <td>naiskorporatsioonides levinud karistuvahend, mille kohaselt eksinud lihtliige peab varajasel hommikutunnil mõnda vilistlast või tegevliiget külastama. </td>
+  </tr>
+   <tr>
+    <td>homo academicus</td>
+    <td>(lad.) akadeemiline inimene. </td>
+  </tr>
+   <tr>
+    <td>humpen</td>
+    <td>(sks.) 1/2 liitrine õlleklaas. </td>
+  </tr>
+   <tr>
+    <td>hõrjamine</td>
+    <td>juhtsimine nimetus EÜS-s.</td>
+  </tr>
+  <tr>
+    <td>hõrjatu </td>
+    <td>juhtsitu nimetus EÜS-s. </td>
+  </tr>
+   <tr>
+    <td>il n'y a point de sots si incommodes que ceux qui ont de l'esprit</td>
+    <td>(pr.) pole ebamugavamaid lollpäid kui need, kes on vaimukad. </td>
+  </tr>
+   <tr>
+    <td>in corpore</td>
+    <td>(lad.) täies koosseisus. </td>
+  </tr>
+   <tr>
+    <td>indlaensis</td>
+    <td>Korp! Indla liige. </td>
+  </tr>
+   <tr>
+    <td>in honorem (N.N.)</td>
+    <td>(lad.) (N.N.) auks. </td>
+  </tr>
+   <tr>
+    <td>in memoriam (N.N.)</td>
+    <td>(lad.) (N.N.) mälestuseks. </td>
+  </tr>
+   <tr>
+    <td>in puris naturalibus </td>
+    <td>(lad.) ihualasti. </td>
+  </tr>
+   <tr>
+    <td>in spe</td>
+    <td>(lad.) lootuses </td>
+  </tr>
+   <tr>
+    <td>inter arma tacent (või silent) musae</td>
+    <td>(lad.) relvade keskel muusad vaikivad. </td>
+  </tr>
+   <tr>
+    <td>inter nos</td>
+    <td>(lad.) meie vahel. </td>
+  </tr>
+   <tr>
+    <td>inter os et offam</td>
+    <td>(lad.) suu ja suutäite vahel. </td>
+  </tr>
+   <tr>
+    <td>inter pocula</td>
+    <td>(lad.) karika taga. </td>
+  </tr>
+   <tr>
+    <td>intiimorganisatsioonid</td>
+    <td>lad. intimus - sisim, kinnised üliõpilasorganisatsioonid, milledest ainult ühte võib korraga kuuluda ning millesse kuulutakse eluaegsuse printsiibi alusel vilistlaskogude kaudu kogu elu. </td>
+  </tr>
+   <tr>
+    <td>intra parietes, privatos</td>
+    <td>(lad.) eraseinte vahel; nelja sima all. </td>
+  </tr>
+   <tr>
+    <td>in vino veritas</td>
+    <td>(lad.) veinis on tõde; vein avab tõekeeli. </td>
+  </tr>
+   <tr>
+    <td>in vino veritas, in vino sinceritas</td>
+    <td>(lad.) veinis on tõde, veinis on ustavus. </td>
+  </tr>
+   <tr>
+    <td>Isamaa, sõprus, ausus</td>
+    <td>Korp! Ugala lipukiri. </td>
+  </tr>
+   <tr>
+    <td>jesuiit e. jesuiidipits</td>
+    <td>ka lütteli (ingl. little ja sks. Schwärtzerlein); pisike viinapits; nime saanud seetõttu, et jesuiidid pidasid teda tema väiksuse pärast andestatavaks patuks, pecatum veniale'ks. </td>
+  </tr>
+   <tr>
+    <td>joci causa</td>
+    <td>(lad.) naljapärast; naljaviluks. </td>
+  </tr>
+   <tr>
+    <td>jooksik</td>
+    <td>jalata klaas (sks. Läufrich, Läuferlein või ka Tümmelchen, Tümmler ja Tummelbecher, pr. boikout - s.o. joo kõik, ära jäta vahele). </td>
+  </tr>
+  <tr>
+    <td>juhtser </td>
+    <td>juhtsimisotsuse põhjal organisatsioonist eemaldatud võlgnik - liige kel on organisatsiooni ees mingeid võlgu. </td>
+  </tr>
+   <tr>
+    <td>juhtsimine </td>
+    <td>keeld organisatsiooni võlglastele organisatsiooni tegevuses osaleda. </td>
+  </tr>
+   <tr>
+    <td>juhtsitu </td>
+    <td>juhtser. </td>
+  </tr>
+   <tr>
+    <td>junges Haus</td>
+    <td>(sks.) noormaja. </td>
+  </tr>
+   <tr>
+    <td>jus armorum</td>
+    <td>(lad.) relvaõigus; rusikaõigus. </td>
+  </tr>
+   <tr>
+    <td>jus nonscriptum </td>
+    <td>(lad.) kirjutamata seadus. </td>
+  </tr>
+   <tr>
+    <td>jus potandi</td>
+    <td>(lad.) (keerukas) joomakord. </td>
+  </tr>
+   <tr>
+    <td>jusqu'? la lie!</td>
+    <td>(pr.) põhjani! </td>
+  </tr>
+   <tr>
+    <td>jusqu'au bout!</td>
+    <td>(pr.) kuni lõpuni! </td>
+  </tr>
+   <tr>
+    <td>järelejooja</td>
+    <td>vt. ettejoomine. </td>
+  </tr>
+   <tr>
+    <td>järelhaavamine </td>
+    <td>sks. Nachtauche; ükskõik milline ilma kuramaatori vahenduseta suhtlemine sõnas või teos peale väljakutsumist (v.a. juhul, kui kehtib comment suspendu). </td>
+  </tr>
+   <tr>
+    <td>järgijooja </td>
+    <td>vt. järelejooja. </td>
+  </tr>
+   <tr>
+    <td>K!A! </td>
+    <td>C!A! </td>
+  </tr>
+   <tr>
+    <td>kaaskneipija</td>
+    <td>üliõpilane või ülikoolilõpetanu, kes pole küll organisatsiooni liige, kuid kes tunnustab organisatsiooni kodukorda ja uususi ning omab seega õiguse kasutada ajutiselt värvikandjate loal organisatsiooni ruume ja piiratud ulatuses ka inventari. </td>
+  </tr>
+   <tr>
+    <td>kaasvilistlane</td>
+    <td>vilistlase pöördumine (oma) korporatsiooni teise vilistlase poole. </td>
+  </tr>
+   <tr>
+    <td>kaasvõitleja</td>
+    <td>lad. commilito, commilitonis; laiemas mõistes on ta ükskõik millise sõbraliku akadeemilise organisatsiooni liige; kitsamas mõistes vaid oma organisatsiooni mistahes liige ja veelgi kitsamas mõistes värvikandja või tegevliige. </td>
+  </tr>
+   <tr>
+    <td>kaatripäev</td>
+    <td>päev pärast suuremat pidu (eeskätt pärast komerssi või Volbriööd); sisaldab endast üldjuhul rahulikku ja mittekiirustavat tagasipöördumist reaalsesse ellu. </td>
+  </tr>
+   <tr>
+    <td>kahv</td>
+    <td>sissekukkumine suurustamisel (vt ka renomeerimine). </td>
+  </tr>
+   <tr>
+    <td>Kaninchen</td>
+    <td>naisrebane. </td>
+  </tr>
+   <tr>
+    <td>kaputsiinlane</td>
+    <td>pisut suurem pits kui jesuiit. </td>
+  </tr>
+  <tr>
+    <td>karikas </td>
+    <td> joogianum, mis koosneb mahutist e. nõust (appa), jalast (pedus) ja pidemest (nodus); tänapäeval leiab kasutamist peamiselt mitmesuguste tseremooniate (näit. kommerss) käigus. </td>
+  </tr>
+   <tr>
+    <td>K!FP</td>
+    <td>C!FP. </td>
+  </tr>
+   <tr>
+    <td>K!Fr!E!</td>
+    <td> C!Fr!E! </td>
+  </tr>
+   <tr>
+    <td>K!Fr!L!</td>
+    <td>C!Fr!L! </td>
+  </tr>
+   <tr>
+    <td>K!Fr!T!</td>
+    <td>C!Fr!T! </td>
+  </tr>
+   <tr>
+    <td>Katerfrühstück</td>
+    <td>(sks.) hommikueine peale tormilist pidu, esimene toidupala kaatripäeval. </td>
+  </tr>
+   <tr>
+    <td>K!I! </td>
+    <td>C!I! </td>
+  </tr>
+   <tr>
+    <td>Kindlus, vendlus, ausus</td>
+    <td> Korp! Tehnola lipukiri. </td>
+  </tr>
+   <tr>
+    <td>kinnine hääletus</td>
+    <td>kirjalik (salajane) hääletussüsteem. </td>
+  </tr>
+   <tr>
+    <td>kirsipruun-valge-roheline</td>
+    <td>Korp! Indla värvid. </td>
+  </tr>
+   <tr>
+    <td>K!K! </td>
+    <td>konvendi- e. korporatsioonikohus. </td>
+  </tr>
+   <tr>
+    <td>K!L! </td>
+    <td>C!L! </td>
+  </tr>
+   <tr>
+    <td>K!Lem! </td>
+    <td>C!Lem! </td>
+  </tr>
+   <tr>
+    <td>kneipe, Kneipe </td>
+    <td>(sks.) (õlle)joomisruum konvendis; ajalooliselt tähendas ta halva kuulsusega kõrtsi Saksamaal. </td>
+  </tr>
+   <tr>
+    <td>kneipen</td>
+    <td>(sks.) jooma (kõrtsis või kneipes). </td>
+  </tr>
+   <tr>
+    <td>kneipija</td>
+    <td>kneipimisega tegeleja; jooja. </td>
+  </tr>
+   <tr>
+    <td>kneipima </td>
+    <td>vt. kneipen. </td>
+  </tr>
+   <tr>
+    <td>kneiptuba</td>
+    <td>vt. kneipe. </td>
+  </tr>
+   <tr>
+    <td>knv! </td>
+    <td>konvent. </td>
+  </tr>
+   <tr>
+    <td>knv!!</td>
+    <td>konvendid. </td>
+  </tr>
+  <tr>
+    <td>knv!knv!</td>
+    <td>konvendid. </td>
+  </tr>
+   <tr>
+    <td>kodukord</td>
+    <td>eeskirjade ja traditsioonide seadusandlik kirjalik kogum. </td>
+  </tr>
+   <tr>
+    <td>kokkulöömine</td>
+    <td>tegevus, mis on välja kasvanud ettejoomiskombest ja mis sisaldab endas erinevate joomisprotsessil osalejate joogianumate õrnalt teineteise vastu löömises; vastavalt joojate arvule ja soovile lüüakse kokku kas centrum'isse või ükshaaval. </td>
+  </tr>
+   <tr>
+    <td>kolmnurk </td>
+    <td>kuuest õllepudelist muudustuv kolmnurk ametliku õllelaua ajal. </td>
+  </tr>
+   <tr>
+    <td>koloorium</td>
+    <td>vt. colorium. </td>
+  </tr>
+   <tr>
+    <td>komitaat</td>
+    <td>ad. comes - sõber; eripidu vilistlaskokku astumisel. </td>
+  </tr>
+   <tr>
+    <td>kommersinädal</td>
+    <td>vt. kommerss.</td>
+  </tr>
+   <tr>
+    <td>kommerss </td>
+    <td>lad. commercium - läbikäimine; kitsamas mõistes on ta vennastuspidu, tähtsaim pidu semestris; laiemas mõistes aeg enne ja pärast vennastuspidu (seitse päeva enne ja kolm päeva pärast) e. kommersinädal, mil toimuvad mitmesugused pidustused ning ettevõtmised. </td>
+  </tr>
+   <tr>
+    <td>komilitoon</td>
+    <td>kaasvõitleja. </td>
+  </tr>
+   <tr>
+    <td>komiltoon</td>
+    <td>kaasvõitleja. </td>
+  </tr>
+   <tr>
+    <td>konvendikohus</td>
+    <td>liikmete eksimuste üle otsustav ja karistusi määrav instants. </td>
+  </tr>
+   <tr>
+    <td>konvendihoone</td>
+    <td>korporatsioonile kuuluv ning tema tegevuseks vajalik ehitis. </td>
+  </tr>
+   <tr>
+    <td>konvendikorter</td>
+    <td>korporatsioonile kuuluv ning tema tegevuseks vajalik korter konvendihoone puudumisel. </td>
+  </tr>
+   <tr>
+    <td>konvendisaal </td>
+    <td>konvendi koosolekute ruum konvendimajas või - korteris. </td>
+  </tr>
+   <tr>
+    <td>konvent </td>
+    <td>vt. convent. </td>
+  </tr>
+   <tr>
+    <td>koosolek(ud)</td>
+    <td>organisatsiooni kõrgeim seadusandlik ja täitevvõim; vt ka kodukorrast. </td>
+  </tr>
+   <tr>
+    <td>koopteeritud vilistlane</td>
+    <td>vilistlane, kes on võetud vilistlaskogu liikmeks väljastpoolt organisatsiooni, s.o. ilma tegevliikme staatuses olemiseta. </td>
+  </tr>
+   <tr>
+    <td>korp!</td>
+    <td>korporatsiooni lühend (umbisikuline ja üldine). Korp! - korporatsiooni lühend konkreetse korporatsiooni nimetuse puhul (selle ees). </td>
+  </tr>
+   <tr>
+    <td>korp!!</td>
+    <td>korporatsioonid. </td>
+  </tr>
+   <tr>
+    <td>korp!korp!</td>
+    <td>korporatsioonid. </td>
+  </tr>
+  <tr>
+    <td>korporatsioon </td>
+    <td>traditsioonidel, ea- ja vanuseprintsiibil põhinev kindla sisekorraga värvekandev üliõpilasorganisatsioon. </td>
+  </tr>
+   <tr>
+    <td>korrakohus </td>
+    <td>omavaheline- e. konvendikohus. </td>
+  </tr>
+   <tr>
+    <td>Kotzebue </td>
+    <td>sks. kotzen - oksendama; seega: "ta kotzebuetab" - "ta oksendab" ning "ta on püstitanud ausamba Kotzebuele" - "ta oksendas". </td>
+  </tr>
+   <tr>
+    <td>K!R!</td>
+    <td>C!R! </td>
+  </tr>
+   <tr>
+    <td>K!Rev!</td>
+    <td>C!Rev! </td>
+  </tr>
+   <tr>
+    <td>krambambuli </td>
+    <td>vt. crambambuli. </td>
+  </tr>
+   <tr>
+    <td>Krasser Fuchs</td>
+    <td>(sks.) noorrebane. </td>
+  </tr>
+   <tr>
+    <td>K!S! </td>
+    <td>C!S! </td>
+  </tr>
+   <tr>
+    <td>ksv! </td>
+    <td>kaasvõitleja. </td>
+  </tr>
+   <tr>
+    <td>ksv!!</td>
+    <td>kaasvõitlejad. </td>
+  </tr>
+   <tr>
+    <td>ksv!ksv! </td>
+    <td>kaasvõitlejad. </td>
+  </tr>
+   <tr>
+    <td>ksvil!</td>
+    <td>kaasvilistlane. </td>
+  </tr>
+   <tr>
+    <td>ksvil!! </td>
+    <td> kaasvilistlased. </td>
+  </tr>
+   <tr>
+    <td>ksvil!ksvil!</td>
+    <td>kaasvilistlased. </td>
+  </tr>
+   <tr>
+    <td>K!T!</td>
+    <td>C!T! </td>
+  </tr>
+   <tr>
+    <td>K!U!</td>
+    <td>C!U! </td>
+  </tr>
+   <tr>
+    <td>kuldrebane </td>
+    <td>üliõpilane pärast 13. ja 14. semestrit (juhul kui ta l!l!! poolt selleks valitakse!), kes hüüab peale cantust madala häälega "fiducit" ja kes kannab mustal sametteklil kuldset sirklit. Põhimõtte pärast igavene üliõpilane. </td>
+  </tr>
+   <tr>
+    <td>kulupea </td>
+    <td>11.-12. semestri värvikandja </td>
+  </tr>
+   <tr>
+    <td>kuradikassa </td>
+    <td>kassa, kuhu kogutakse karistustrahve vandesõnade ja roppuste eest. </td>
+  </tr>
+   <tr>
+    <td>kuramaator </td>
+    <td>poolte e. partede vahendaja auvahekorra ajal. </td>
+  </tr>
+  <tr>
+    <td>kuramaazh </td>
+    <td>lad. cura - hool; auvahekorraaegne vahendus ja sobitustoiming. </td>
+  </tr>
+   <tr>
+    <td>kurrisch </td>
+    <td>vt. kuurish. </td>
+  </tr>
+   <tr>
+    <td>kurri </td>
+    <td>vt. kuurish. </td>
+  </tr>
+   <tr>
+    <td>kuurish!</td>
+    <td>põhjani!; ka kurri, kurrisch ja currisch. </td>
+  </tr>
+   <tr>
+    <td>K!V!</td>
+    <td>C!V! </td>
+  </tr>
+   <tr>
+    <td>kvoorum </td>
+    <td>hääletuspädev liikmete hulk koosolekutel. </td>
+  </tr>
+   <tr>
+    <td>küüneproov </td>
+    <td>toiming, mille läigus kontrollitakse karistusklaasi või kannu tühjaksjoomust - jooginõu sisu üritatakse kallata pöidlaküünele, kui küünele koguneb tilk, loetakse karistusklaasi joomine kehtetuks. </td>
+  </tr>
+   <tr>
+    <td>lahtine hääletus</td>
+    <td>käega märguandmisel põhinev hääletusüsteem. </td>
+  </tr>
+   <tr>
+    <td>laiendatud eestseisus </td>
+    <td>eestseisus ja teised ametnikud. </td>
+  </tr>
+   <tr>
+    <td>lakkimine </td>
+    <td>karistuseks värvide tähtajaline või tähtajatu äravõtmine. </td>
+  </tr>
+   <tr>
+    <td>Landesvater </td>
+    <td> Saksa analoog vennastuspeole. </td>
+  </tr>
+   <tr>
+    <td>Landsmannschaft </td>
+    <td>maakondliku prinsiibiga saksa üliõpilasorganisatsioon. </td>
+  </tr>
+   <tr>
+    <td>lapsus calami </td>
+    <td>(lad.) kirjaviga. </td>
+  </tr>
+   <tr>
+    <td>lapsus linqua</td>
+    <td>(lad.) sõnavääratus. </td>
+  </tr>
+   <tr>
+    <td>lapsus memoriae</td>
+    <td>(lad.) mäluvääratus. </td>
+  </tr>
+   <tr>
+    <td>lauakõne </td>
+    <td>lühike ja lööv kõne peolauas, mis algab ja lõpeb sõnadega "Silentium ad verbum!" ja "Verbum ex est!". </td>
+  </tr>
+   <tr>
+    <td>L!E! </td>
+    <td>laiendatud eestseisus. </td>
+  </tr>
+   <tr>
+    <td>legalis </td>
+    <td>(lad.) pooleni (kasutatakse harva). </td>
+  </tr>
+   <tr>
+    <td>leibcantus </td>
+    <td>(lad. ja sks. segak.) lemmiklaul. </td>
+  </tr>
+   <tr>
+    <td>lembelensa </td>
+    <td>Korp! Lembela liige </td>
+  </tr>
+  <tr>
+    <td>leolensis </td>
+    <td>Korp! Leola värvikandja. </td>
+  </tr>
+   <tr>
+    <td>levis nota</td>
+    <td>(lad.) väike märkus. </td>
+  </tr>
+   <tr>
+    <td>levis sit tibi terra</td>
+    <td>(lad.) kerge olgu sulle muld. </td>
+  </tr>
+   <tr>
+    <td>lhl!</td>
+    <td>lihtliige. </td>
+  </tr>
+   <tr>
+    <td>lhl!!</td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>lhl!lhl!</td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>lhvil!</td>
+    <td>lihtvilistlane. </td>
+  </tr>
+   <tr>
+    <td>lhvil!!</td>
+    <td>lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>lhvil!lhvil!</td>
+    <td> lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>lihtl! </td>
+    <td>lihtliige. </td>
+  </tr>
+   <tr>
+    <td>lihtl!!</td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>lihtl!lihtl! </td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>lihtvil!</td>
+    <td>lihtvilistlane. </td>
+  </tr>
+   <tr>
+    <td>lihtvil!!</td>
+    <td>lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>lihtvil!lihtvil! </td>
+    <td>lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>lihtliige </td>
+    <td>liige, kes ei kuulu veel konventi ega oma värve. </td>
+  </tr>
+   <tr>
+    <td>lihtvilistlane </td>
+    <td>koopteeritud vilistlaskogu liige, kellel pole veel värve. </td>
+  </tr>
+   <tr>
+    <td>liidukohtunik </td>
+    <td>Liidukohtu liige. </td>
+  </tr>
+   <tr>
+    <td>Liidukohus </td>
+    <td>E.K.L.-i korporatsioonide vaheline korrakohus. </td>
+  </tr>
+   <tr>
+    <td>liiviklane </td>
+    <td>ÜS Liivika liige. </td>
+  </tr>
+  <tr>
+    <td>L!K!</td>
+    <td>Liidukohus. </td>
+  </tr>
+   <tr>
+    <td>l!l!</td>
+    <td>lihtliige. </td>
+  </tr>
+   <tr>
+    <td>l!l!!</td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>l!l!l!l! </td>
+    <td>lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>loco citato</td>
+    <td>(lad.) ettenähtud kohas. </td>
+  </tr>
+   <tr>
+    <td>loco sigilli</td>
+    <td>(lad.) pitsati koht. </td>
+  </tr>
+   <tr>
+    <td>l!vil!</td>
+    <td>lihtvilistlane. </td>
+  </tr>
+   <tr>
+    <td>l!vil!!</td>
+    <td>lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>l!vil!l!vil! </td>
+    <td>lihtvilistlased. </td>
+  </tr>
+   <tr>
+    <td>macaroni </td>
+    <td>(lad.) makaronid; traditsiooniline protsessioontants mööda kogu C!Q!-d (külastatakse kõiki selle viimasedki urkaid), mille käigus hoi- takse eesoleva makaroonitaja paremast õlast oma parema käega kinni ja lauldakse marssimise käigus: "Trulla-trulla-trulla-la-la-la-la, trulla-trulla-trulla-la-la-la-la! Ai macaroni, ai macaroni, ai maca-maca-maca-macaroni jne.!"; protsessioon algab vanamehe hüüde "Silentium ad macaroneum!" peale, kulgeb rapiiriga kogu seda ettevõtmist juhatava vanamehe eestvedamisel ja lõpeb ümber oma telje keerutava spiraalpuntrana viimatimainitud ametimehe poolt hüütava "Macaroni ex est!-iga". </td>
+  </tr>
+   <tr>
+    <td>mag!b!</td>
+    <td>magister bibendi. </td>
+  </tr>
+   <tr>
+    <td>mag!c!</td>
+    <td>magister cantandi </td>
+  </tr>
+   <tr>
+    <td>magister bibendi </td>
+    <td>(lad.) joomingu juhataja, joomakorra õpetaja. </td>
+  </tr>
+   <tr>
+    <td>magister cantandi</td>
+    <td> (lad.) lauluõpetaja </td>
+  </tr>
+   <tr>
+    <td>magister colori</td>
+    <td>(lad.) korp!-i sümboolika eest vastutaja Korp! Lembelas </td>
+  </tr>
+   <tr>
+    <td>magister linguae</td>
+    <td>(lad.) eesti keele puhtuse eest vastutaja Korp! Fraternitas Esticas. </td>
+  </tr>
+   <tr>
+    <td>magister paucandi</td>
+    <td>(lad.) paukimisõpetaja, kehalise harimise eest vastutaja. </td>
+  </tr>
+   <tr>
+    <td>magister referendi</td>
+    <td>(lad.) referaadiõhtute läbiviija. </td>
+  </tr>
+   <tr>
+    <td>mag!l!</td>
+    <td>magister linguae. </td>
+  </tr>
+   <tr>
+    <td>mag!p!</td>
+    <td>magister paucandi. </td>
+  </tr>
+  <tr>
+    <td>mag!r!</td>
+    <td>magister referendi. </td>
+  </tr>
+   <tr>
+    <td>magna cum laude</td>
+    <td>(lad.) suurima kiitusega. </td>
+  </tr>
+   <tr>
+    <td>maj!</td>
+    <td>majaisa. </td>
+  </tr>
+   <tr>
+    <td>majaisa </td>
+    <td>konvendi ametnik, kes hoolitseb konvendikorteri või -hoone korra, majanduspoole ja toimkondade eest. </td>
+  </tr>
+   <tr>
+    <td>majanduseestseisja </td>
+    <td>konvendi ametnik, kes hoolitseb knv! majanduse eest ja koostab eelarveid. </td>
+  </tr>
+   <tr>
+    <td>maj!eests! </td>
+    <td>majanduseestseisja. </td>
+  </tr>
+   <tr>
+    <td>major domus</td>
+    <td>(lad.) majaisa. </td>
+  </tr>
+   <tr>
+    <td>makarooni </td>
+    <td>vt.macaroni </td>
+  </tr>
+   <tr>
+    <td>maltretaazh </td>
+    <td> pr. maltraiter - halvasti kaitsema; ennast häbistada laskma; (enda) au jäme haavata laskmine. </td>
+  </tr>
+   <tr>
+    <td>maltreteerima </td>
+    <td>halvasti käituma, solvamisega teisele väljakutseks põhjust andma. </td>
+  </tr>
+   <tr>
+    <td>manu propria</td>
+    <td>(lad.) oma käega. </td>
+  </tr>
+   <tr>
+    <td>mater </td>
+    <td>(lad.) (akadeemiline) ema. </td>
+  </tr>
+   <tr>
+    <td>M!B!</td>
+    <td>mag!b! </td>
+  </tr>
+   <tr>
+    <td>M!C!</td>
+    <td>mag!c! </td>
+  </tr>
+   <tr>
+    <td>M!D!</td>
+    <td>maj! </td>
+  </tr>
+   <tr>
+    <td>meespere </td>
+    <td>naiskorporatsiooni liikmete abikaasad ja lesed (viimased aga ainult kuni uuesti abiellumiseni). </td>
+  </tr>
+   <tr>
+    <td>mensurant </td>
+    <td>(põhimõtteline) mensuuril osaleja. </td>
+  </tr>
+   <tr>
+    <td>mensuur </td>
+    <td>tegelik auasjade lahendamine (rapiiri- või püstoliduelli) abil. </td>
+  </tr>
+   <tr>
+    <td>metsik </td>
+    <td>organiseerimatu, tudeng, kes ei kuulu ühtegi akadeemilisse organisatsiooni. </td>
+  </tr>
+   <tr>
+    <td>M!L! </td>
+    <td>mag!l! </td>
+  </tr>
+  <tr>
+    <td>more majorum</td>
+    <td>(lad.) esivanemate kombe järgi. </td>
+  </tr>
+   <tr>
+    <td>M!P!</td>
+    <td>mag!p! </td>
+  </tr>
+   <tr>
+    <td>M!R! </td>
+    <td>mag!r! </td>
+  </tr>
+   <tr>
+    <td>multa cadunt inter calicem supremaque labra</td>
+    <td>(lad.) palju sünnib/langeb karika ja huulte vahelt. </td>
+  </tr>
+   <tr>
+    <td>must laud </td>
+    <td>õllelaud, kus on keelatud kangemate alkohoolsete jookide ja veini tarbimine. </td>
+  </tr>
+   <tr>
+    <td>must-roheline-valge</td>
+    <td>Korp! Tehnola värvid. </td>
+  </tr>
+   <tr>
+    <td>must-sinine-valge</td>
+    <td>Korp! Ugala värvid. </td>
+  </tr>
+   <tr>
+    <td>mustmaja </td>
+    <td> lihtliige, kes ei ole enam rebane (peale teist semestrit). </td>
+  </tr>
+   <tr>
+    <td>muulus </td>
+    <td>sks. Mulus - muul; koolilõpetanu, kes pole veel tudeng. </td>
+  </tr>
+   <tr>
+    <td>naasirlane </td>
+    <td>hebr. nasir - eraldatud; karsklane. </td>
+  </tr>
+   <tr>
+    <td>naispere </td>
+    <td>meeskorporatsiooni liikmete abikaasad ja lesed (viimased aga ainult kuni uuesti abiellumiseni). </td>
+  </tr>
+   <tr>
+    <td>natio </td>
+    <td>(lad.) rahvas, rahvus. </td>
+  </tr>
+   <tr>
+    <td>Nation </td>
+    <td>üliõpilasorganisatsioon Rootsis. </td>
+  </tr>
+   <tr>
+    <td>Nec aspera terrent! </td>
+    <td>(lad.); Korp! Ugala mitteametlik vapikiri. </td>
+  </tr>
+   <tr>
+    <td>n!l!</td>
+    <td>noorliige. </td>
+  </tr>
+   <tr>
+    <td>n!l!!</td>
+    <td>noorliikmed. </td>
+  </tr>
+   <tr>
+    <td>n!l!n!l!</td>
+    <td>noorliikmed. </td>
+  </tr>
+   <tr>
+    <td>Non habeas!</td>
+    <td>(lad.) Ei luba! </td>
+  </tr>
+   <tr>
+    <td>Non scolae sed vitae discimus!</td>
+    <td>(lad.) me ei õpi mitte kooli, vaid iseendi jaoks!; EÜS Põhjala sõrmuse sisse graveeritud kiri.</td>
+  </tr>
+   <tr>
+    <td>noorliige </td>
+    <td>lihtliikme vaste osades seltsides. </td>
+  </tr>
+  <tr>
+    <td>noormaja </td>
+    <td> 3.-4. semestri värvikandja. </td>
+  </tr>
+   <tr>
+    <td>noormees </td>
+    <td>lihtliikme familiaarne vaste EÜS-is. </td>
+  </tr>
+   <tr>
+    <td>noorrebane </td>
+    <td>esimese semestri rebane. </td>
+  </tr>
+   <tr>
+    <td>noortelend </td>
+    <td>lihtliikmete märkamatu ärahiilimine, mõneajaline eemalviibimine ja taassaabumine organisatsiooni teatud korra kohaselt. </td>
+  </tr>
+   <tr>
+    <td>noortevanem </td>
+    <td>rebasvanema nimetus naiskorporatsioonides, näiteks Korp! Filiae Patriaes. </td>
+  </tr>
+   <tr>
+    <td>nuda veritas </td>
+    <td>(lad.) alasti tõde. </td>
+  </tr>
+   <tr>
+    <td>nunc est bibundum, nunc pede libero pulsana tellus</td>
+    <td>(lad.) nüüd joome, nüüd lööme tantsu. </td>
+  </tr>
+   <tr>
+    <td>nunc vino pelli te curas</td>
+    <td>(lad.) nüüd veiniga kihutagem minema mured. </td>
+  </tr>
+   <tr>
+    <td>o/a</td>
+    <td>oma armas; oma armsale. </td>
+  </tr>
+   <tr>
+    <td>oaas </td>
+    <td>eristsenaariumiga kaatripäevahommik (EÜS-is). </td>
+  </tr>
+   <tr>
+    <td>officialis </td>
+    <td>(lad.) ametlik; vt. offitsiaal. </td>
+  </tr>
+   <tr>
+    <td>offitsiaal</td>
+    <td>tavapärane laupäevaõhtune õllelaud. </td>
+  </tr>
+   <tr>
+    <td>O/K</td>
+    <td>omavaheline kohus. </td>
+  </tr>
+   <tr>
+    <td>olderman</td>
+    <td>sks. Altes Mann - vanamees. </td>
+  </tr>
+   <tr>
+    <td>olümp </td>
+    <td>erilise traditsioonilise kombestikuga ruumikujunduslik-ehituslik jooming; lõpeb üldjuhul laemäärimisega (EÜS-is). </td>
+  </tr>
+   <tr>
+    <td>Olympia </td>
+    <td>vt. olümp. </td>
+  </tr>
+   <tr>
+    <td>omavaheline kohus </td>
+    <td>korrakohus, konvendikohus. </td>
+  </tr>
+   <tr>
+    <td>Osaskunta</td>
+    <td>(sm.) osakond; üliõpilasorganisatsioon Soomes. </td>
+  </tr>
+   <tr>
+    <td>paavst </td>
+    <td>n.n. paavstiksjoomise võitja; muidu tore ja auväärt amet, aga seoses sellega, et iga õllelauas osaleja võib vastkroonitud paavstile ette juua. </td>
+  </tr>
+   <tr>
+    <td>paavstiksjoomine </td>
+    <td>omapärase parem-pääseb-edasi turniirisüsteemiga õllejoomisvõistlus, mille võitja pärjatakse paavstiks (pannakse talle pähe paavstimüts, selga paavsti talaar ja antakse kätte paavstisau), pannakse istuma baldahiiniga tugitooli ning antakse talle piiramatu õllevõim käesoleva õllelaua jooksul. </td>
+  </tr>
+   <tr>
+    <td>parole d'honneur </td>
+    <td>(pr.) ausõna. </td>
+  </tr>
+   <tr>
+    <td>parte </td>
+    <td>lad. pars - pool; vastane auvahekorra ajal. </td>
+  </tr>
+   <tr>
+    <td>pater </td>
+    <td>(lad.) (akadeemiline) isa. </td>
+  </tr>
+   <tr>
+    <td>paukima </td>
+    <td>rapiiridega vehklema. </td>
+  </tr>
+   <tr>
+    <td>paukimistuba </td>
+    <td> tuba konvendis, kus leiavad aset paukimine ja mensuurid. </td>
+  </tr>
+   <tr>
+    <td>pealekellakahtekord </td>
+    <td>küllaltki lõbus ja vabameelne konvendisviibimise ja alkoholitarbimise kord, mis algab peale kella kahte öösel ja lõpeb hommikul kell kaheksa; vanamehe eriloal võib aga kell konvendis kaks saada tunduvalt varem kui muus maailmas. </td>
+  </tr>
+   <tr>
+    <td>peccantum veniale' ka pecatum veniale</td>
+    <td>(lad.) andestatav patt. </td>
+  </tr>
+   <tr>
+    <td>peeker</td>
+    <td>lad. baccarium - väike lameda põhjaga jooginõu. </td>
+  </tr>
+  <tr>
+    <td>Per aspera ad astra! </td>
+    <td>(lad.) Läbi raskuste tähtede poole!; Korp! Amicitia lipukiri. </td>
+  </tr>
+   <tr>
+    <td>pereat!</td>
+    <td>(lad.) kadugu, hävinegu! </td>
+  </tr>
+   <tr>
+    <td>pereat tristitia!</td>
+    <td>(lad.) kadugu kurbus! </td>
+  </tr>
+   <tr>
+    <td>per pedes</td>
+    <td>(lad.) jalgsi. </td>
+  </tr>
+   <tr>
+    <td>per vota maiora </td>
+    <td>(lad.) (otsustama) häälteenamusega. </td>
+  </tr>
+   <tr>
+    <td>piilu </td>
+    <td>rahvapärane hellitusnimetus filia'le. </td>
+  </tr>
+   <tr>
+    <td>Philister</td>
+    <td>(sks.) vilistlane. </td>
+  </tr>
+   <tr>
+    <td>plenus venter non studet libenter </td>
+    <td>(lad.) täis kõht ei õpi meeleldi. </td>
+  </tr>
+   <tr>
+    <td>plume </td>
+    <td>(pr. - sulg), naisüliõpilane. </td>
+  </tr>
+   <tr>
+    <td>poolametlik õllelaud </td>
+    <td>mitte väga pidulik õllelaud, s.t. kehtib organisatsiooni tavaline comment, toimub ta kas peale ametliku õllelaua lõppu, või iseseisvalt. </td>
+  </tr>
+   <tr>
+    <td>posser </td>
+    <td>korrast mittekinnipidav vääritu mees; mitteteklist peakate. </td>
+  </tr>
+   <tr>
+    <td>preparaator </td>
+    <td>umbes samasugune tegelane EÜS-is nagu promus Korp! Ugalas. </td>
+  </tr>
+   <tr>
+    <td>pro </td>
+    <td>(lad.) poolt, seisuga. </td>
+  </tr>
+   <tr>
+    <td>promus </td>
+    <td>(lad.) V.-Rooma sõjaväe veini- ja toidukeldri ülem; õlle ja kõige muu tarviliku väljastaja, ahjude kütja, knv! koristaja, korrapidaja jne. Korp! Ugala knv!-s. </td>
+  </tr>
+   <tr>
+    <td>prosit!</td>
+    <td>16.saj pärinev tervitussõna ette- või kokkujoomisel </td>
+  </tr>
+   <tr>
+    <td>proosit! </td>
+    <td>vt. prosit! </td>
+  </tr>
+   <tr>
+    <td>Prosit kommerss!</td>
+    <td>tervitussõnad, millega ühe organisatsiooni liikmed tervitavad teineteist kommersinädala ajal. </td>
+  </tr>
+   <tr>
+    <td>pro tempore</td>
+    <td>(lad.) praeguseks, ajutiselt. </td>
+  </tr>
+   <tr>
+    <td>puršš </td>
+    <td>bursch, üliõpilane. </td>
+  </tr>
+   <tr>
+    <td>purššvilistlane </td>
+    <td>burschvilistlane. </td>
+  </tr>
+   <tr>
+    <td>põrgu </td>
+    <td>kneipe EÜS-is. </td>
+  </tr>
+   <tr>
+    <td>quale vinum, tale latinum</td>
+    <td>(lad.) kuidas vein, nõnda jutt (või ladina keel). </td>
+  </tr>
+   <tr>
+    <td>qualis vir, talis oratio</td>
+    <td>(lad.) nagu mees, nõnda jutt. </td>
+  </tr>
+   <tr>
+    <td>que causa?</td>
+    <td>(lad.) mis põhjusel? </td>
+  </tr>
+   <tr>
+    <td>qui vit sans folie n'est pas si sage gu'ile eroit</td>
+    <td>(pr.) kes elab hullusteta, polegi nii tark, kui ise arvab. </td>
+  </tr>
+   <tr>
+    <td>quot coellum stellas, tot habet tua Roma puellas </td>
+    <td>(lad.) kui palju tähti on taevas, nii palju tüdrukuid on sul Roomas.</td>
+  </tr>
+   <tr>
+    <td>raimlalane </td>
+    <td>ÜS Raimla liige. </td>
+  </tr>
+  <tr>
+    <td>reb! </td>
+    <td> rebane. </td>
+  </tr>
+   <tr>
+    <td>reb!!</td>
+    <td>rebased. </td>
+  </tr>
+   <tr>
+    <td>reb!reb! </td>
+    <td>rebased. </td>
+  </tr>
+   <tr>
+    <td>rebane</td>
+    <td>lad. "faex" või "fux" (pärmipõhi e. -pära) on saanud sks. "Fuchs" (kõrbhobune v. rebane); üliõpilasorganisatsiooni esimese kahe semestri liikmed. </td>
+  </tr>
+   <tr>
+    <td>rebasekasvatus </td>
+    <td>vt. Fuchsdrill. </td>
+  </tr>
+   <tr>
+    <td>rebase seitse asja</td>
+    <td>esemed, mis peavad igal rebasel alati kaasas olema: tikutoos, pudeliavaja, kirjutusvahend, peenraha (viie krooni ulatuses), ümbrik kirjapaberiga, märkmik ja laulik. </td>
+  </tr>
+   <tr>
+    <td>rebaskolleegium</td>
+    <td>vanamehetund. </td>
+  </tr>
+   <tr>
+    <td>rebaskorpus </td>
+    <td>ühe organisatsiooni lihtliikmeskond. </td>
+  </tr>
+   <tr>
+    <td>rebastelend </td>
+    <td> vt. noortelend. </td>
+  </tr>
+   <tr>
+    <td>rebastevanem </td>
+    <td>vanamehe ametinimi naiskorporatsioonides. </td>
+  </tr>
+   <tr>
+    <td>rebasvanem </td>
+    <td>vanamehe ametinimi naiskorporatsioonides; lihtliige, kes on rebaskorpuse esimees Korp! Ugalas. </td>
+  </tr>
+   <tr>
+    <td>regaalid </td>
+    <td>akadeemilised (võimu)sümbolid, koloorium ning kogu asjassepuutuv atribuutika (lipp, vapp, rapiirid, särped jne.). </td>
+  </tr>
+   <tr>
+    <td>reissimine </td>
+    <td>sks. Reissen - kiskumine; norimine, provokatsioon (erinevalt aasimisest on ta pahatahtlikkuse varjundiga). </td>
+  </tr>
+   <tr>
+    <td>renomeerimine </td>
+    <td>vestlusparneri jutuga "sisse vedada" püüdmine; olenevalt "sisseveetuse" astmest on vastane teinud kas kahvi või saanud blamaazhi osaliseks. </td>
+  </tr>
+   <tr>
+    <td>Rev! </td>
+    <td>Korp! Revelia.</td>
+  </tr>
+   <tr>
+    <td>revelus </td>
+    <td>Korp! Revelia värvikandja. </td>
+  </tr>
+   <tr>
+    <td>rev!kom! </td>
+    <td>revisjonikomision. </td>
+  </tr>
+   <tr>
+    <td>rex bibendi</td>
+    <td>vt. sümpoosion. </td>
+  </tr>
+   <tr>
+    <td>roheline-must-valge</td>
+    <td>Korp! Revelia värvid. </td>
+  </tr>
+   <tr>
+    <td>roheline-valge-violett </td>
+    <td>Korp! Fraternitas Tartuensise värvid. </td>
+  </tr>
+   <tr>
+    <td>Rot! </td>
+    <td>Korp! Rotalia. </td>
+  </tr>
+   <tr>
+    <td>rotalus </td>
+    <td>Korp! Rotalia värvikandja. </td>
+  </tr>
+   <tr>
+    <td>rukk </td>
+    <td>tähtajaline v. tähtajatu organisatsioonist väljaheitmine karistusena suurema süüteo eest. </td>
+  </tr>
+   <tr>
+    <td>rukitu </td>
+    <td>rukkimisega karistatu. </td>
+  </tr>
+   <tr>
+    <td>ruktoonus </td>
+    <td>rukitu. </td>
+  </tr>
+   <tr>
+    <td>rukoonus </td>
+    <td>rukitu. </td>
+  </tr>
+   <tr>
+    <td>Rõõm, lootus, rahu</td>
+    <td>Korp! Fraternitas Liviensise lipukiri. </td>
+  </tr>
+  <tr>
+    <td>s/a</td>
+    <td>selle aasta. </td>
+  </tr>
+   <tr>
+    <td>Sak!</td>
+    <td>Korp! Sakala. </td>
+  </tr>
+   <tr>
+    <td>sakalanus </td>
+    <td>Korp! Sakala värvikandja. </td>
+  </tr>
+   <tr>
+    <td>salamander </td>
+    <td>erilise rituaaliga, vanamehe poolt juhitav kurrishijoomine kellegi või millegi auks ja heaks käekäiguks. </td>
+  </tr>
+   <tr>
+    <td>Salamander ex est!</td>
+    <td>(lad.) Salamander on lõppenud. </td>
+  </tr>
+   <tr>
+    <td>salle d'armen</td>
+    <td>(pr.) paukimistuba. </td>
+  </tr>
+   <tr>
+    <td>salve! </td>
+    <td>(lad.) ole tervitatud! </td>
+  </tr>
+   <tr>
+    <td>sammalpea</td>
+    <td>9. - 10. semestri värvikandja. </td>
+  </tr>
+   <tr>
+    <td>sarv </td>
+    <td>lad. cornu; vanamehe atribuutide juurde kuuluv jooginõu. </td>
+  </tr>
+   <tr>
+    <td>satisfikatsioon </td>
+    <td>lad. satisficatio - rahulolu; autasu (kas sõnaline s.o. leppimus v. tegelik s.o. mensuuri näol) auvahekorra puhul. </td>
+  </tr>
+   <tr>
+    <td>sat prata biberunt</td>
+    <td>(lad.) luhad on piisavalt vihma joonud; olen juba piisavalt joonud. </td>
+  </tr>
+   <tr>
+    <td>S!C!</td>
+    <td>senioride konvent; vt. ka E.K.L. </td>
+  </tr>
+   <tr>
+    <td>schmollis </td>
+    <td>šmollis </td>
+  </tr>
+   <tr>
+    <td>Schoppen </td>
+    <td>(sks.) õllekann. </td>
+  </tr>
+   <tr>
+    <td>scr!</td>
+    <td>scriba. </td>
+  </tr>
+   <tr>
+    <td>scriba </td>
+    <td>(lad.) kirjatoimetaja. </td>
+  </tr>
+   <tr>
+    <td>Sedeas!</td>
+    <td>(lad.) Ei luba; sama, mis Non habeas! </td>
+  </tr>
+   <tr>
+    <td>sekundant </td>
+    <td>mensurandi poolt valitud asjaajaja ja kahevõitluse kontrollija mensuuril. </td>
+  </tr>
+   <tr>
+    <td>sem.</td>
+    <td>semester. </td>
+  </tr>
+   <tr>
+    <td>semester </td>
+    <td>poolaasta, aeg, millal toimub aktiivne konvendi tegevus: sügissemester september - detsember ja kevadsemes ca. veebruar - mai. </td>
+  </tr>
+   <tr>
+    <td>senioride konvent </td>
+    <td>vt. E.K.L. </td>
+  </tr>
+   <tr>
+    <td>seltsivend </td>
+    <td>kaasvõitleja nimetus Korp! Vironias. </td>
+  </tr>
+   <tr>
+    <td>senior </td>
+    <td>(lad.) esimees. </td>
+  </tr>
+   <tr>
+    <td>Silentium!</td>
+    <td>(lad.) Vaikust! Vait! </td>
+  </tr>
+   <tr>
+    <td>Silentium ad cantum! </td>
+    <td>(lad.) Vaikust lauluks! </td>
+  </tr>
+   <tr>
+    <td>Silentium ad commercium! </td>
+    <td>(lad.) Vaikust kommersiks! </td>
+  </tr>
+   <tr>
+    <td>Silentium ad macaroneum! </td>
+    <td>(lad.) Vaikust makarooniks! </td>
+  </tr>
+  <tr>
+    <td>Silentium ad verbum! </td>
+    <td>(lad.) Vaikust kõneks! </td>
+  </tr>
+   <tr>
+    <td>Silentium, cantus! </td>
+    <td>(lad.) Vaikust, laul! (EÜS-is).</td>
+  </tr>
+   <tr>
+    <td>Silentium, macaroni! </td>
+    <td>(lad.) Vaikust, makarooni! (EÜS-is). </td>
+  </tr>
+   <tr>
+    <td>Silentium, verbum! </td>
+    <td>(lad.) Vaikust, kõne! (EÜS-is). </td>
+  </tr>
+   <tr>
+    <td>sine amicitia vitam esse nullam</td>
+    <td>(lad.) sõpruseta elul pole väärtust. </td>
+  </tr>
+   <tr>
+    <td>sine Amicitia vitam esse nullam</td>
+    <td>(lad.) Amicitiata elul pole väärtust. </td>
+  </tr>
+   <tr>
+    <td>sine cerere et Baccho friget Venus</td>
+    <td>(lad.) Cereseta (toiduta) ja Baccuseta (joogita) külmetub Venus (armastus). </td>
+  </tr>
+   <tr>
+    <td>sinine-must-roheline </td>
+    <td>Korp! Rotalia värvid. </td>
+  </tr>
+   <tr>
+    <td>sinine-must-valge </td>
+    <td>Eesti Üliõpilaste Seltsi värvid; Eesti rahvusvärvid. </td>
+  </tr>
+   <tr>
+    <td>sirkel </td>
+    <td>sks. Cirkel või Zirkel - vääntäht; põimik tähtedest V (vivat), C (crescat), F (floreat) koos organisatsiooni algustähega (näiteks U on Ugala). </td>
+  </tr>
+   <tr>
+    <td>sisseandmine </td>
+    <td>kas kiituseks või laituseks mingisuguse joogiühiku ärajoomiskohustis; võib olla nii kiituseks - mingi hea teo eest, või ka laituseks - mingi apsu eest. </td>
+  </tr>
+   <tr>
+    <td>smollis </td>
+    <td>šmollis. </td>
+  </tr>
+   <tr>
+    <td>solo (cum coro)</td>
+    <td>(lad.) soolo (ühes kooriga); laulust juhatatakse sel puhul rapiiriga vaid neid kohti, kus soovitakse kaasa laulmist. </td>
+  </tr>
+   <tr>
+    <td>soovitaja </td>
+    <td>värvikandja, kes soovitab oma allkirjaga uut liiget selle vastuvõtul organisatsiooni. </td>
+  </tr>
+   <tr>
+    <td>soror </td>
+    <td>(lad.) õde, naiskaasvõitleja. </td>
+  </tr>
+   <tr>
+    <td>spelunk </td>
+    <td>lad. spelunca; ilge kõrts. </td>
+  </tr>
+  <tr>
+    <td>spetsiell </td>
+    <td>vt. spetsielles. </td>
+  </tr>
+   <tr>
+    <td>spetsielles </td>
+    <td>erijutt mis pole määratud võõrastele kõrvadele. </td>
+  </tr>
+   <tr>
+    <td>s/s</td>
+    <td>selle semestri. </td>
+  </tr>
+   <tr>
+    <td>stante pede!</td>
+    <td>(lad.) jalamaid! </td>
+  </tr>
+   <tr>
+    <td>strik-ütlused </td>
+    <td>ausõnaga kinnitatavad üutlused konvendikohtus. Kui need lähevad vastuollu, siis lõpetatakse koheselt kohtu istung ja antakse asi erakoosolekule üle. </td>
+  </tr>
+   <tr>
+    <td>Studentenverbindung </td>
+    <td>värvekandev üliõpilasselts Saksamaal. </td>
+  </tr>
+   <tr>
+    <td>Studentenverein </td>
+    <td>värvekandev üliõpilasselts Saksamaal. </td>
+  </tr>
+   <tr>
+    <td>studiosus</td>
+    <td>(lad.) üliõpilane. </td>
+  </tr>
+   <tr>
+    <td>studiosus in spe</td>
+    <td>(lad.) muulus, kes kavatseb tuleval sügisel ülikooli astuda. </td>
+  </tr>
+   <tr>
+    <td>subscriba </td>
+    <td>(lad.) abi- v. asekirjatoimetaja. </td>
+  </tr>
+   <tr>
+    <td>subsenior </td>
+    <td>(lad.) abi- v. aseesimees. </td>
+  </tr>
+   <tr>
+    <td>sunt tria damma domus: iber, mala femina, fumus </td>
+    <td>(lad.) on kolm nuhtlust: niiskus, halb naine ja suits. </td>
+  </tr>
+   <tr>
+    <td>Sõnasse kindlust, teosse ausust, kodule armastust! </td>
+    <td>Korp! Indla lipukiri. </td>
+  </tr>
+   <tr>
+    <td>sõsar </td>
+    <td>ÜS Veljesto naisliige. </td>
+  </tr>
+   <tr>
+    <td>särp, särpe</td>
+    <td>lai värvilint pidulikel esindusjuhtudel. </td>
+  </tr>
+   <tr>
+    <td>sümpoosion </td>
+    <td>kr. symposion - jooming pärast sööki lauakõnede ja mängude, muusika, tantsijannade, narride jt. kaasabil; tänapäevasemas mõistes tähendab ta eesseisuse ja/või vanamehe eelisseisust joominguil (tegelikult peaks seda nimetama küll symposiarchos'eks, kuna V.-Roomas kandis joomingu patriits nime rex bibendi v. magister bibendi) - joomine eraldi "privaatsetest" jooginõudest, kuna ülejäänud pidutsejad joovad ringikäivast jooginõust (entsüklopoosia e. encycloposia), tühjendades oma sõbrannade ja sõprade auks niipalju peekreid, kuipalju tähti sisaldub viimaste nimedes. </td>
+  </tr>
+   <tr>
+    <td>symposiarchos </td>
+    <td>vt sümpoosion.</td>
+  </tr>
+   <tr>
+    <td>šmollis </td>
+    <td>mugandus sõnadest sis mihi mollis amicus või sit tibi mollis - (lad.) olgu sulle kosutav; fraas, mida värvikandjad hüüavad peale korralikult õnnestunud laulu. </td>
+  </tr>
+   <tr>
+    <td>šmollist jooma</td>
+    <td>sinasõprust jooma.</td>
+  </tr>
+   <tr>
+    <td>taberna </td>
+    <td>(lad.) kõrts. </td>
+  </tr>
+   <tr>
+    <td>taberna cerevisiaria aut vinaria </td>
+    <td>(lad.) õlle- v. veinikõrts. </td>
+  </tr>
+   <tr>
+    <td>tegelik autasu</td>
+    <td>mensuuri korras lahendatav (au)vahekord. </td>
+  </tr>
+   <tr>
+    <td>tegevkonvent </td>
+    <td>vt. konvent. </td>
+  </tr>
+   <tr>
+    <td>tegevliige </td>
+    <td>üliõpilasest värvikandja; tegevkonvendi liige. </td>
+  </tr>
+   <tr>
+    <td>tehnolus </td>
+    <td>Korp! Tehnola värvikandja. </td>
+  </tr>
+   <tr>
+    <td>tekkel </td>
+    <td>sks. Deckel - mütsi kate; korporatsiooni värvi- v. rebasemüts. </td>
+  </tr>
+   <tr>
+    <td>Tempus ex est!</td>
+    <td>(lad.) Olen tagasi! </td>
+  </tr>
+  <tr>
+    <td>Tempus peto! </td>
+    <td>(lad.) palun luba ruumist lahkumiseks! </td>
+  </tr>
+   <tr>
+    <td>Tempus peto ad finitum! </td>
+    <td>(lad.) palun luba lõplikuks lahkumiseks! </td>
+  </tr>
+   <tr>
+    <td>Teos õiglane ja vahvas, ustav sulle, eesti rahvas! </td>
+    <td>Korp! Fraternitas Estica lipukiri. </td>
+  </tr>
+   <tr>
+    <td>tgl!</td>
+    <td>tegevliige. </td>
+  </tr>
+   <tr>
+    <td>tgl!! </td>
+    <td>tegevliikmed. </td>
+  </tr>
+   <tr>
+    <td>tgl!tgl! </td>
+    <td>tegevliikmed. </td>
+  </tr>
+   <tr>
+    <td>t!l!</td>
+    <td>tegevliige. </td>
+  </tr>
+   <tr>
+    <td>t!l!!</td>
+    <td>tegevliikmed. </td>
+  </tr>
+   <tr>
+    <td>t!l!t!l! </td>
+    <td>tegevliikmed. </td>
+  </tr>
+   <tr>
+    <td>torn </td>
+    <td>õlleklaas (serveeritakse ilma pudelita); õllelauas peatuma jäänud ringikäiv õllekann. </td>
+  </tr>
+   <tr>
+    <td>trisna </td>
+    <td>peale korporatsiooni liikme matust konvendiruumides toimuv koosviibimine lahkunu mälestuseks. </td>
+  </tr>
+   <tr>
+    <td>Truudus, tublidus, ausus!</td>
+    <td>Korp! Leola lipukiri. </td>
+  </tr>
+   <tr>
+    <td>tsööter</td>
+    <td>vt. concoetur. </td>
+  </tr>
+   <tr>
+    <td>tsöötus</td>
+    <td>vt. coetus. </td>
+  </tr>
+   <tr>
+    <td>Turnenschaft </td>
+    <td>värvekandev üliõpilaste spordiselts Saksamaal. </td>
+  </tr>
+   <tr>
+    <td>Töö, tõde, elurõõm!</td>
+    <td>Korp! Fraternitas Tartuensise lipukiri. </td>
+  </tr>
+  <tr>
+    <td>Töö isamaa kasuks!</td>
+    <td>EÜS Põhjala lipukiri. </td>
+  </tr>
+   <tr>
+    <td>Ug!</td>
+    <td>Korp! Ugala. </td>
+  </tr>
+   <tr>
+    <td>ugalane </td>
+    <td>ahvalik ugalensise nimetus. </td>
+  </tr>
+   <tr>
+    <td>ugalensis </td>
+    <td>Korp! Ugala värvikandja. </td>
+  </tr>
+   <tr>
+    <td>uraltes Haus </td>
+    <td>(sks.) igivana maja. </td>
+  </tr>
+   <tr>
+    <td>urbemoostes Haus </td>
+    <td>(sks.) vana sammalpea, kulupea. </td>
+  </tr>
+   <tr>
+    <td>ururbemoostes Haus </td>
+    <td>(sks.) igikulupea. </td>
+  </tr>
+   <tr>
+    <td>uusus(ed)</td>
+    <td>vt. comment </td>
+  </tr>
+   <tr>
+    <td>vaba õllelaud </td>
+    <td>vt. pealekellakahtekord. </td>
+  </tr>
+   <tr>
+    <td>vale! </td>
+    <td>(lad.) jumalaga! ela hästi! </td>
+  </tr>
+   <tr>
+    <td>valete!</td>
+    <td>(lad.) elage hästi! </td>
+  </tr>
+   <tr>
+    <td>valge laud </td>
+    <td>rikkalik, kangemate alkohoolsete jookide ja veiniga peolaud, kus on keelatud õlle joomine. </td>
+  </tr>
+   <tr>
+    <td>valge-punane-roheline</td>
+    <td>Korp! Filiae Patriae värvid. </td>
+  </tr>
+   <tr>
+    <td>vanamaja </td>
+    <td>5. - 6. semestri värvikandja. </td>
+  </tr>
+   <tr>
+    <td>vanamees </td>
+    <td>organisatsiooni ametimees, kelle ülesandeks on noorliikmete kasvatamine, sisemise korra järele valvamine ja rituaalsete tseremooniate ning piduõhtute läbiviimine; nimetatakse osades organisatsioonides ka rebas-, rebaste- v. noortevanemaks. </td>
+  </tr>
+   <tr>
+    <td>vanamemm </td>
+    <td>vanamehe ametinimi Korp! Syringas.</td>
+  </tr>
+   <tr>
+    <td>vanarebane</td>
+    <td>teise semestri rebane. </td>
+  </tr>
+   <tr>
+    <td>vanuseprintsiip </td>
+    <td>printsiip, mille kohaselt coetus'elt nooremad organisatsiooni liikmed peavad alluma akadeemiliselt staailt vanematele liikmetele; concotur'itel omavahelist vanuseprinsiipi ei arvestata; ka kaob vanuseprintsiip omavahelises suhtlemises vilistlastel. </td>
+  </tr>
+   <tr>
+    <td>vapisaal </td>
+    <td>konvendisaal; siin asub ka organisatsioni vapp. </td>
+  </tr>
+   <tr>
+    <td>vapituba </td>
+    <td>konvendisaali oludest tingitud väiksem variant. </td>
+  </tr>
+   <tr>
+    <td>vastane </td>
+    <td>vt. parte. </td>
+  </tr>
+   <tr>
+    <td>V.C.F.</td>
+    <td>vivat, crescat, floreat! </td>
+  </tr>
+   <tr>
+    <td>Vendlus, ausus, hoolsus </td>
+    <td>Korp! Fraternitas Liviensise vapikiri. </td>
+  </tr>
+   <tr>
+    <td>vennastuspidu </td>
+    <td>kommerss kitsamas mõistes; keerukas traditsiooniline rituaal oma ühtekuuluvus- ja vennalikkusetunde, korporatsiooni põhimõtete ja aadete kinnitamiseks koos teklite rapiiri otsa torkamisega ja sümboose veinikarikaga.
+</td>
+  </tr>
+   <tr>
+    <td>Verbum peto!</td>
+    <td>(lad.) palun kõneks luba!</td>
+  </tr>
+   <tr>
+    <td>vil!</td>
+    <td>vilistlane. </td>
+  </tr>
+   <tr>
+    <td>vil!!</td>
+    <td>vilistlased.</td>
+  </tr>
+  <tr>
+    <td>vil!vil! </td>
+    <td>vilistlased. </td>
+  </tr>
+   <tr>
+    <td>vilister</td>
+    <td>vilistlane. </td>
+  </tr>
+   <tr>
+    <td>vilistlane </td>
+    <td>sks. Philister - (vananenult põlglikult öelduna) mitteüliõpilane; endine üliõpilasorganisatsiooni tegevliige; vilistlaskogu liige. </td>
+  </tr>
+   <tr>
+    <td>vilistlaskogu </td>
+    <td>korporatsiooni vilistlastest koosnev eraldi seisev organisatsioon, mille eesmärgiks on tegevkonvendi igakülgne toetamine. </td>
+  </tr>
+   <tr>
+    <td>vinum lac senum </td>
+    <td>(lad.) vein on vanale piim. </td>
+  </tr>
+   <tr>
+    <td>vinum laetificat cor hominis </td>
+    <td>(lad.) vein rõõmustab inimese südant. </td>
+  </tr>
+   <tr>
+    <td>vinum solvit linquam</td>
+    <td>(lad.) vein avab keelepaelad. </td>
+  </tr>
+   <tr>
+    <td>violett-kollane-valge</td>
+    <td>Korp! Leola värvid. </td>
+  </tr>
+   <tr>
+    <td>violett-must-valge</td>
+    <td>Korp! Vironia värvid. </td>
+  </tr>
+   <tr>
+    <td>violett-roheline-valge</td>
+    <td>Korp! Fraternitas Liviensise värvid. </td>
+  </tr>
+   <tr>
+    <td>Vir!</td>
+    <td>Korp! Vironia. </td>
+  </tr>
+   <tr>
+    <td>vironus </td>
+    <td>Korp! Vironia värvikandja. </td>
+  </tr>
+   <tr>
+    <td>vivat, crescat, floreat ... in aeternum!</td>
+    <td>(lad.) elagu, kasvagu, õitsegu ... igavesti! </td>
+  </tr>
+   <tr>
+    <td>vivat, crescat, floreat ... in saecula saeculorum!</td>
+    <td>(lad.) elagu, kasvagu, õitsegu ... ajast aega! </td>
+  </tr>
+   <tr>
+    <td>V!K! </td>
+    <td>vilistlaskogu. </td>
+  </tr>
+   <tr>
+    <td>vorm number üks </td>
+    <td>vt. esindusvorm. </td>
+  </tr>
+  <tr>
+    <td>väga vana maja </td>
+    <td>7. - 8. semestri värvikandja. </td>
+  </tr>
+   <tr>
+    <td>väljakutse </td>
+    <td>solvatu avalik v. varjatud (eeskätt ligemale sõbrale võõraste juuresolekul) reageering solvaja suhtes; vt. ka avalik väljakutse. </td>
+  </tr>
+   <tr>
+    <td>värvid </td>
+    <td>pr. couleurs; kitsamas mõistes tekkel ja lint, laiemas mõistes kogu koloorium; tekkel ja lint on kujunenud sõjaväelase riietusest: kiivri(ilustise)st ja mõõgarihmast (sks. soldatische Bändestracht). </td>
+  </tr>
+   <tr>
+    <td>värvide andmine </td>
+    <td>lihtliikmest tegevliikmeks saamise rituaal. </td>
+  </tr>
+   <tr>
+    <td>värvikandja </td>
+    <td>organisatsiooni liige kes on saanud õiguse kanda oma organisatsiooni värviteklit ja linti ning võib kasutada kõiki regaale; tegevliige, üliõpilasvilistlane või vilistlane. </td>
+  </tr>
+   <tr>
+    <td>värvikandja rebane </td>
+    <td>tegevliige, kes on saanud värvid oma 1. - 2. organisatsioonisviibimise semestri jooksul, s.o. oma rebaseajal. </td>
+  </tr>
+   <tr>
+    <td>värvirapiir </td>
+    <td>organisatsiooni värvidega kaunistatud korviga rapiir. </td>
+  </tr>
+   <tr>
+    <td>vääntäht </td>
+    <td>sirkel (EÜS-is). </td>
+  </tr>
+   <tr>
+    <td>õestuspidu</td>
+    <td>kommersi (vennastuspeo) analoog naiskorporatsioonides. </td>
+  </tr>
+   <tr>
+    <td>õllehaige</td>
+    <td>korporatsiooni liige, kellel vanamees on teatud ajani keelanud õllepruukimise. </td>
+  </tr>
+   <tr>
+    <td>ühendatud koosolek</td>
+    <td>tegevkonvendi ja vilistlaskogu ühine koosolek. </td>
+  </tr>
+   <tr>
+    <td>Üks kõige, kõik ühe eest!</td>
+    <td>Korp! Revelia lipukiri. </td>
+  </tr>
+   <tr>
+    <td>Üks kõigi, kõik ühe eest!</td>
+    <td>Korp! Sakala lipukiri. </td>
+  </tr>
+   <tr>
+    <td>üldkoosolek </td>
+    <td>tegevkonvendi koosolek, kust võtavad osa ka lihtliikmed. </td>
+  </tr>
+   <tr>
+    <td>üldmüts </td>
+    <td>vt. apollo. </td>
+  </tr>
+   <tr>
+    <td>üliõpilane </td>
+    <td>tudent, stuudent, tudeng, studioosus jne.; inimene, kes õpib ülikoolis. </td>
+  </tr>
+   <tr>
+    <td>üliõpilasvilistlane </td>
+    <td> vt. burschvilistlane. </td>
+  </tr>
+   <tr>
+    <td>ül!vil!</td>
+    <td>üliõpilasvilistlane. </td>
+  </tr>
+   <tr>
+    <td>ül!vil!! </td>
+    <td>üliõpilasvilistlased. </td>
+  </tr>
+   <tr>
+    <td>ül!vil!ül!vil! </td>
+    <td>üliõpilasvilistlased. </td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
